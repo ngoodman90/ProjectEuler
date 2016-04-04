@@ -8,7 +8,7 @@ int
 isPrime(int n)
 {
 	int i;
-	for (i = 2; i <= sqrt((double)n); i++)
+	for (i = 3; i <= sqrt((double)n); i += 2)
 	{
 		if (n % i == 0)
 			return -1;
